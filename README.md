@@ -1,5 +1,5 @@
 # php-cachet
-PHP 7.0 class for interacting with a Cachet installation (Very simple, i know) :-)
+PHP 7.0 class for interacting with a Cachet (https://cachethq.io/) installation (Very simple, i know) :-)
 
 Wanted features:
 
