@@ -1,6 +1,6 @@
-# CachetAPIClass
-PHP 7.0 class for interacting with a Cachet installation
+# php-cachet
+PHP 7.0 class for interacting with a Cachet installation (Very simple, i know) :-)
 
 Wanted features:
 
-- Easy interaction with a Cachet installation API
+- Easy interaction with a Cachet installation API through PHP
