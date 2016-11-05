@@ -1,12 +1,11 @@
 <?php
-
 /**
- * Description of cachet
+ * PHP 7.0 class for interacting with a Cachet installation (Very simple, i know) :-)
  *
  * @author Michal Skogemann - 2016
  */
-class cachet {
 
+class cachet {
     public function __construct($cachet_host, $cachet_token, $debugmode = FALSE) {
         $this->cachet_host = $cachet_host;
         $this->cachet_token = $cachet_token;
@@ -14,7 +13,6 @@ class cachet {
     }
 
     ## Components
-
     public function components($id = NULL, $method = 'GET', $data = NULL) {
         if ($id) {
             return $this->doCurl('components/' . $id, $method, $data);
@@ -58,6 +56,7 @@ class cachet {
             return $this->doCurl('metrics', $method, $data);
         }
     }
+    
     ## Misc
     public function ping() {
         return $this->doCurl('ping');
@@ -68,7 +67,6 @@ class cachet {
     }
 
     ## Internal methods
-
     private function doCurl($endpoint, $request_type = 'GET', $data = null, $params = null) {
         try {
             $url = 'http://'.$this->cachet_host . '/api/v1/' . $endpoint;
