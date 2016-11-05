@@ -9,3 +9,6 @@ TODO:
 
 - Better documentation
 - Better integration
+
+Usage:
+see test.php
